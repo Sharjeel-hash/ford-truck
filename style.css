@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#image{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("Mountain\ Car.jpg");
+}
+#dark{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+nav{
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo a span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(250, 206, 123);
+}
+nav .logo a{
+    font-weight: bolder;
+    color: wheat;
+    font-size: 45px;
+    text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+    padding: 20px 6px;
+    margin-right: 20px;
+    border-radius: 9px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: wheat;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(250, 206, 123);
+}
+.buttons{
+    font-size: 26px;
+}
+nav .buttons a{
+    color: wheat;
+    text-decoration: none;
+}
+nav #login{
+    padding: 8px 16px;
+}
+nav #register{
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin-right: 20px;
+    background-color: rgba(245, 222, 179, 0.473);
+}
+#dark .content{
+    margin-top: 6%;
+    max-width: 600px;
+    padding: 0px 80px;
+}
+.content h2{
+    font-size: 45px;
+    color: wheat;
+    font-weight: bold;
+}
+.content h2 span{
+    color: rgb(250, 199, 105);
+}
+.content p{
+    line-height: 24px;
+    font-size: 18px;
+    color: wheat;
+}
+.content p span{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(250, 199, 105);
+}
+.link{
+    margin-top: 20px;
+    padding: 0px 80px;
+}
+.link #truck{
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    color: wheat;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color: goldenrod;
+}
+.link #truck:hover{
+    box-shadow: inset 1px  1px 20px rgba(0, 0, 0, 0.404);
+}
+@media (max-width: 485px){
+    #image{
+        background-position:  center;
+    }
+    nav{
+        padding: 15px 10px;
+    }
+    nav .logo a{
+        font-size: 30px;
+    }
+    nav ul li{
+        display: none;
+    }
+    .buttons{
+        display: flex;
+    }
+    nav #login{
+        padding: 6px 10px;
+    }
+    nav #register{
+        padding: 8px 16px;
+        margin-right: 0px;
+    }
+    #dark .content{
+        margin-top: 30%;
+        padding: 10px;
+        max-width: 450px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .content p{
+        line-height: 20px;
+    }
+    .link{
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+    .link #truck{
+        font-size: 17;
+    }
+}
